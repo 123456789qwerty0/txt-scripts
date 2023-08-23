@@ -1,4 +1,12 @@
+--[[
+    Unrestricted BTools
+	By: OpenGamerTips
 
+	Keybinds:
+	Press P for BTools
+	Press L to unlock the Workspace
+	Press K to enable the backpack/other core elements.
+]]--
 
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
