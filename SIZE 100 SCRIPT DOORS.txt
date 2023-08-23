@@ -1,0 +1,3 @@
+-- Settings
+local SizeChange = -4
+loadstring(game:HttpGet("https://pastebin.com/raw/0vctfyEX"))()

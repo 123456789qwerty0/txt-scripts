@@ -1,0 +1,213 @@
+local SynapseXgui = Instance.new("ScreenGui")
+local sf = Instance.new("Frame")
+local input = Instance.new("TextBox")
+local sciptbar = Instance.new("Frame")
+local logo1 = Instance.new("TextLabel")
+local logo2 = Instance.new("TextLabel")
+local logo3 = Instance.new("TextLabel")
+local clearb = Instance.new("TextButton")
+local openfile = Instance.new("TextButton")
+local executefile = Instance.new("TextButton")
+local attach = Instance.new("TextButton")
+local sh = Instance.new("TextButton")
+local svf = Instance.new("TextButton")
+local executeb = Instance.new("TextButton")
+local opt = Instance.new("TextButton")
+local _ = Instance.new("TextLabel")
+local x = Instance.new("TextLabel")
+--Properties:
+SynapseXgui.Name = "Synapse X gui"
+SynapseXgui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SynapseXgui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ 
+sf.Name = "sf"
+sf.Parent = SynapseXgui
+sf.Active = true
+sf.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+sf.BorderSizePixel = 0
+sf.Position = UDim2.new(0.0862250254, 0, 0.0976253152, 0)
+sf.Size = UDim2.new(0, 771, 0, 353)
+sf.Draggable = true
+ 
+input.Name = "input"
+input.Parent = sf
+input.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+input.BorderSizePixel = 0
+input.Position = UDim2.new(0.0259403381, 0, 0.0651558042, 0)
+input.Size = UDim2.new(0, 532, 0, 265)
+input.Font = Enum.Font.SourceSans
+input.Text = ""
+input.TextColor3 = Color3.new(1, 1, 1)
+input.TextSize = 30
+input.TextXAlignment = Enum.TextXAlignment.Left
+input.TextYAlignment = Enum.TextYAlignment.Top
+ 
+sciptbar.Name = "sciptbar"
+sciptbar.Parent = sf
+sciptbar.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+sciptbar.BorderSizePixel = 0
+sciptbar.Position = UDim2.new(0.756160855, 0, 0.0651558042, 0)
+sciptbar.Size = UDim2.new(0, 165, 0, 265)
+ 
+logo1.Name = "logo1"
+logo1.Parent = sf
+logo1.BackgroundColor3 = Color3.new(1, 1, 1)
+logo1.BackgroundTransparency = 1
+logo1.BorderSizePixel = 0
+logo1.Position = UDim2.new(-0.0129701691, 0, 0, 0)
+logo1.Size = UDim2.new(0, 55, 0, 23)
+logo1.Font = Enum.Font.Cartoon
+logo1.Text = "S"
+logo1.TextColor3 = Color3.new(1, 1, 1)
+logo1.TextSize = 30
+ 
+logo2.Name = "logo2"
+logo2.Parent = sf
+logo2.BackgroundColor3 = Color3.new(1, 1, 1)
+logo2.BackgroundTransparency = 1
+logo2.BorderSizePixel = 0
+logo2.Position = UDim2.new(-1.86264515e-09, 0, -0.0169971678, 0)
+logo2.Size = UDim2.new(0, 55, 0, 23)
+logo2.Font = Enum.Font.Cartoon
+logo2.Text = "x"
+logo2.TextColor3 = Color3.new(1, 0.392157, 0)
+logo2.TextSize = 15
+ 
+logo3.Name = "logo3"
+logo3.Parent = sf
+logo3.BackgroundColor3 = Color3.new(1, 1, 1)
+logo3.BackgroundTransparency = 1
+logo3.BorderSizePixel = 0
+logo3.Position = UDim2.new(0.440985739, 0, 0, 0)
+logo3.Size = UDim2.new(0, 132, 0, 23)
+logo3.Font = Enum.Font.Cartoon
+logo3.Text = "Synapse X v1.3.2 created by:yanbrz21#9124"
+logo3.TextColor3 = Color3.new(1, 1, 1)
+logo3.TextSize = 15
+ 
+clearb.Name = "clearb"
+clearb.Parent = sf
+clearb.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+clearb.BorderSizePixel = 0
+clearb.Position = UDim2.new(0.140077829, 0, 0.872521222, 0)
+clearb.Size = UDim2.new(0, 88, 0, 30)
+clearb.Font = Enum.Font.SourceSans
+clearb.Text = "Clear"
+clearb.TextColor3 = Color3.new(1, 1, 1)
+clearb.TextSize = 15
+clearb.MouseButton1Down:connect(function()
+input.Text = ""
+end)
+ 
+openfile.Name = "openfile"
+openfile.Parent = sf
+openfile.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+openfile.BorderSizePixel = 0
+openfile.Position = UDim2.new(0.272373527, 0, 0.872521222, 0)
+openfile.Size = UDim2.new(0, 84, 0, 30)
+openfile.Font = Enum.Font.SourceSans
+openfile.Text = "Open File"
+openfile.TextColor3 = Color3.new(1, 1, 1)
+openfile.TextSize = 15
+ 
+executefile.Name = "execute file"
+executefile.Parent = sf
+executefile.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+executefile.BorderSizePixel = 0
+executefile.Position = UDim2.new(0.391699106, 0, 0.872521222, 0)
+executefile.Size = UDim2.new(0, 88, 0, 30)
+executefile.Font = Enum.Font.SourceSans
+executefile.Text = "Execute File"
+executefile.TextColor3 = Color3.new(1, 1, 1)
+executefile.TextSize = 15
+ 
+attach.Name = "attach"
+attach.Parent = sf
+attach.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+attach.BorderSizePixel = 0
+attach.Position = UDim2.new(0.770428061, 0, 0.872521222, 0)
+attach.Size = UDim2.new(0, 88, 0, 30)
+attach.Font = Enum.Font.SourceSans
+attach.Text = "Attach"
+attach.TextColor3 = Color3.new(1, 1, 1)
+attach.TextSize = 15
+attach.MouseButton1Down:connect(function()
+print "attached :D"
+end)
+ 
+sh.Name = "sh"
+sh.Parent = sf
+sh.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+sh.BorderSizePixel = 0
+sh.Position = UDim2.new(0.898832679, 0, 0.872521222, 0)
+sh.Size = UDim2.new(0, 78, 0, 30)
+sh.Font = Enum.Font.SourceSans
+sh.Text = "Script Hub"
+sh.TextColor3 = Color3.new(1, 1, 1)
+sh.TextSize = 15
+ 
+svf.Name = "svf"
+svf.Parent = sf
+svf.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+svf.BorderSizePixel = 0
+svf.Position = UDim2.new(0.520103753, 0, 0.872521222, 0)
+svf.Size = UDim2.new(0, 88, 0, 30)
+svf.Font = Enum.Font.SourceSans
+svf.Text = "Save Files"
+svf.TextColor3 = Color3.new(1, 1, 1)
+svf.TextSize = 15
+ 
+executeb.Name = "executeb"
+executeb.Parent = sf
+executeb.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+executeb.BorderSizePixel = 0
+executeb.Position = UDim2.new(9.31322575e-10, 0, 0.872521222, 0)
+executeb.Size = UDim2.new(0, 88, 0, 30)
+executeb.Font = Enum.Font.SourceSans
+executeb.Text = "Execute"
+executeb.TextColor3 = Color3.new(1, 1, 1)
+executeb.TextSize = 15
+executeb.MouseButton1Down:connect(function()
+loadstring(input.Text)()
+end)
+ 
+opt.Name = "opt"
+opt.Parent = sf
+opt.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+opt.BorderSizePixel = 0
+opt.Position = UDim2.new(0.642023385, 0, 0.872521222, 0)
+opt.Size = UDim2.new(0, 88, 0, 30)
+opt.Font = Enum.Font.SourceSans
+opt.Text = "Options"
+opt.TextColor3 = Color3.new(1, 1, 1)
+opt.TextSize = 15
+ 
+_.Name = "_"
+_.Parent = sf
+_.BackgroundColor3 = Color3.new(1, 1, 1)
+_.BackgroundTransparency = 1
+_.BorderSizePixel = 0
+_.Position = UDim2.new(0.952010393, 0, -0.0169971678, 0)
+_.Size = UDim2.new(0, 14, 0, 23)
+_.Font = Enum.Font.Cartoon
+_.Text = "_"
+_.TextColor3 = Color3.new(1, 1, 1)
+_.TextSize = 17
+_.MouseButton1Down:connect(function()
+sf.Visible = false
+end)
+ 
+x.Name = "x"
+x.Parent = sf
+x.BackgroundColor3 = Color3.new(1, 1, 1)
+x.BackgroundTransparency = 1
+x.BorderSizePixel = 0
+x.Position = UDim2.new(0.981841743, 0, -0.0169971678, 0)
+x.Size = UDim2.new(0, 14, 0, 23)
+x.Font = Enum.Font.Cartoon
+x.Text = "x"
+x.TextColor3 = Color3.new(1, 1, 1)
+x.TextSize = 17
+x.MouseButton1Down:connect(function()
+sf.Visible = false
+end)

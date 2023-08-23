@@ -1,0 +1,1 @@
+loadstring(game:HttpGet('https://gist.githubusercontent.com/ewsosolol/f1456e7281626b98d50513e62c2b6b5a/raw/b92873e831eef57f3da2537270b66101657e2394/doors%2520script%2520(Beta)'))()

